@@ -36,7 +36,7 @@ trait SendsPasswordResetEmails
 
             throw ValidationException::withMessages([
                 'confirmation' => [
-                    __('confirmation::confirmation.not_confirmed_reset_password', [
+                    __('confirmation.not_confirmed_reset_password', [
                         'resend_link' => route('auth.resend_confirmation')
                     ])
                 ]

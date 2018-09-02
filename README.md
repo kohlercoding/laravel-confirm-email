@@ -11,7 +11,7 @@
 You can install the package via composer:
 
 ```bash
-composer require beyondcode/laravel-confirm-email
+composer require kohlercoding/laravel-confirm-email
 ```
 
 ## Usage

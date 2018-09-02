@@ -73,7 +73,7 @@ trait RegistersUsers
         event(new Confirmed($user));
 
         return $this->confirmed($user)
-            ?: redirect($this->redirectAfterConfirmationPath())->with('confirmation', __('confirmation::confirmation.confirmation_successful'));
+            ?: redirect($this->redirectAfterConfirmationPath())->with('confirmation', __('confirmation.confirmation_successful'));
     }
 
     /**
@@ -89,7 +89,7 @@ trait RegistersUsers
         $user = $model->findOrFail($request->session()->pull('confirmation_user_id'));
         $this->sendConfirmationToUser($user);
 
-        return redirect($this->redirectAfterResendConfirmationPath())->with('confirmation', __('confirmation::confirmation.confirmation_resent'));
+        return redirect($this->redirectAfterResendConfirmationPath())->with('confirmation', __('confirmation.confirmation_resent'));
     }
 
     /**
@@ -107,7 +107,7 @@ trait RegistersUsers
         $this->sendConfirmationToUser($user);
 
         return $this->registered($request, $user)
-            ?: redirect($this->redirectAfterRegistrationPath())->with('confirmation', __('confirmation::confirmation.confirmation_info'));
+            ?: redirect($this->redirectAfterRegistrationPath())->with('confirmation', __('confirmation.confirmation_info'));
     }
 
     /**

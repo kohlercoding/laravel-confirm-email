@@ -1,11 +1,11 @@
 {
-    "name": "beyondcode/laravel-confirm-email",
+    "name": "kohlercoding/laravel-confirm-email",
     "description": "Add email verification to your Laravel projects.",
     "keywords": [
-        "beyondcode",
+        "kohlercoding",
         "laravel-confirm-email"
     ],
-    "homepage": "https://github.com/beyondcode/laravel-confirm-email",
+    "homepage": "https://github.com/kohlercoding/laravel-confirm-email",
     "license": "MIT",
     "authors": [
         {

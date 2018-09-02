@@ -34,7 +34,7 @@ trait AuthenticatesUsers
 
             throw ValidationException::withMessages([
                 'confirmation' => [
-                    __('confirmation::confirmation.not_confirmed', [
+                    __('confirmation.not_confirmed', [
                         'resend_link' => route('auth.resend_confirmation')
                     ])
                 ]
